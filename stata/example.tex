@@ -1,0 +1,35 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression table\label{tab1}}
+\begin{tabular}{l*{1}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}\\
+                    &\multicolumn{1}{c}{growth\_pef}\\
+\hline
+growth Total NAV    &       10.52\sym{*}  \\
+                    &      (2.22)         \\
+[1em]
+ROE                 &  -0.0000224\sym{**} \\
+                    &     (-3.11)         \\
+[1em]
+Return S&P500       &      -9.501\sym{*}  \\
+                    &     (-2.18)         \\
+[1em]
+growth\_spreadbidask &    0.000151         \\
+                    &      (1.36)         \\
+[1em]
+growth\_companymarketcap&     -0.0261         \\
+                    &     (-0.07)         \\
+[1em]
+growth\_totalvolumeetf&    0.000787         \\
+                    &      (1.91)         \\
+[1em]
+Constant            &   -0.000302         \\
+                    &     (-1.57)         \\
+\hline
+Observations        &      573622         \\
+\hline\hline
+\multicolumn{2}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

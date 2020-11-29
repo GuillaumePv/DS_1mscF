@@ -1,0 +1,35 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression table\label{tab1}}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{growth\_pef}&\multicolumn{1}{c}{growth\_pef}&\multicolumn{1}{c}{growth\_pef}\\
+\hline
+growth Total NAV    &       1.039\sym{***}&       0.129\sym{***}&       0.129\sym{***}\\
+                    &    (253.56)         &     (11.96)         &     (11.94)         \\
+[1em]
+ROE                 &                     &  -0.0000118\sym{***}&  -0.0000244\sym{***}\\
+                    &                     &     (-3.95)         &     (-5.53)         \\
+[1em]
+Return S&P500       &                     &      0.0536\sym{***}&      0.0534\sym{***}\\
+                    &                     &      (4.89)         &      (4.86)         \\
+[1em]
+growth\_spreadbidask &                     &   0.0000363         &   0.0000364         \\
+                    &                     &      (0.60)         &      (0.60)         \\
+[1em]
+growth\_companymarketcap&                     &       0.747\sym{***}&       0.747\sym{***}\\
+                    &                     &    (325.91)         &    (325.97)         \\
+[1em]
+growth\_totalvolumeetf&                     &   0.0000370         &   0.0000371         \\
+                    &                     &      (0.26)         &      (0.26)         \\
+[1em]
+Constant            &   -0.000421\sym{***}&   -0.000277\sym{***}&  -0.0000434         \\
+                    &     (-5.92)         &     (-3.84)         &     (-0.46)         \\
+\hline
+Observations        &      573622         &      573622         &      573622         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
