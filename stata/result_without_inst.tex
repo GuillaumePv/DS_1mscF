@@ -1,6 +1,6 @@
 \begin{table}[htbp]\centering
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\caption{Regression table\label{tab1}}
+\caption{Regression table without Instrumental Variable\label{tab1}}
 \begin{tabular}{l*{3}{c}}
 \hline\hline
                     &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
@@ -27,7 +27,10 @@ growth\_totalvolumeetf&                     &   0.0000370         &   0.0000371 
 Constant            &   -0.000421\sym{***}&   -0.000277\sym{***}&  -0.0000434         \\
                     &     (-5.92)         &     (-3.84)         &     (-0.46)         \\
 \hline
-Observations        &      573622         &      573622         &      573622         \\
+Fixed Effects       &          No         &          No         &         Yes         \\
+controls            &          No         &         Yes         &         Yes         \\
+ar2                 &                     &                     &                     \\
+N                   &      573622         &      573622         &      573622         \\
 \hline\hline
 \multicolumn{4}{l}{\footnotesize \textit{t} statistics in parentheses}\\
 \multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
